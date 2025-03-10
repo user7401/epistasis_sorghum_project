@@ -1,2 +1,2 @@
 # epistasis_sorghum_project
-A project analyzing pairwise epistatic interactions in Sorghum using R.
+A university project analyzing pairwise epistatic interactions in Sorghum using R.
