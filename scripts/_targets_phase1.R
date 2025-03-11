@@ -31,7 +31,7 @@ tar_option_set(
   format = if (testing_mode) "qs" else "rds"
 )
 
-# Define your pipeline
+# Define pipeline
 list(
   tar_target(
     vcf_data,
