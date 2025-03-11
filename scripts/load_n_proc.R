@@ -25,7 +25,7 @@ convert_genotype_values <- function(geno) {
 
 # Function to load and filter phenotype data
 load_and_filter_phenotype_data <- function(geno_numeric) {
-  phenotype_data <- read.table("/faststorage/project/sorghum_vep/savvas/sorghum_project_part_2/desktop_to_hpc/targets_script/pheno_individuals_plink/filtered_cal.g_pheno.txt", header = TRUE)
+  phenotype_data <- read.table("filtered_cal.g_pheno.txt", header = TRUE)
   accession_names <- rownames(geno_numeric)
   filtered_pheno_data <- phenotype_data[phenotype_data$IID %in% accession_names, ]
   Y <- filtered_pheno_data$Cal.g
