@@ -16,7 +16,7 @@ This project explores the role of genetic interactions (epistasis) in shaping th
 
 - Pipeline Automation: Implemented using the targets package in R for reproducibility.
 
-##Explanation of Scripts
+## Scripts Overview
 
 - _targets.R: Main targets pipeline script, integrating all steps for data processing and model fitting.
 
