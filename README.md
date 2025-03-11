@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project explores the role of genetic interactions (epistasis) in shaping the genetic architecture of complex traits in Sorghum bicolor. Using single-nucleotide polymorphism (SNP) data and phenotypic information, we developed an R pipeline for epistasis analysis to detect significant SNP-SNP interactions.
+This project was completed as a semester-long Project in Bioinformatics (5 ECTS) during my Master's degree at Aarhus Univeristy. This project explores the role of genetic interactions (epistasis) in shaping the genetic architecture of complex traits in Sorghum bicolor. Using single-nucleotide polymorphism (SNP) data and phenotypic information, we developed an R pipeline for epistasis analysis to detect significant SNP-SNP interactions. The project was done in collaboration with Savvas Chatzivasieliou under the supervision of Thomas Bataillon, Guillaume Ramstein.
 
 ## Features
 
