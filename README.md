@@ -1,5 +1,3 @@
-# epistasis_sorghum_project
-
 # Pairwise Epistatic Interactions and Their Functional Consequences in Sorghum
 
 ## Overview
