@@ -2,19 +2,26 @@
 
 ## Overview
 
-This project was completed as a semester-long Project in Bioinformatics (5 ECTS) during my Master's degree at Aarhus Univeristy. This project explores the role of genetic interactions (epistasis) in shaping the genetic architecture of complex traits in Sorghum bicolor. Using single-nucleotide polymorphism (SNP) data and phenotypic information, we developed an R pipeline for epistasis analysis to detect significant SNP-SNP interactions. The project was done in collaboration with Savvas Chatzivasieliou under the supervision of Thomas Bataillon and Guillaume Ramstein.
+This project was completed as a semester-long Project in Bioinformatics (5 ECTS) during my Master's degree at Aarhus Univeristy. This project explores the role of genetic interactions (epistasis) in shaping the genetic architecture of complex traits in Sorghum bicolor. Using single-nucleotide polymorphism (SNP) data and phenotypic information, we developed a modular and reproducible R pipeline for epistasis analysis to detect significant SNP-SNP interactions. The pipeline automates the entire process from VCF processing to statistical model fitting. The project was done in collaboration with Savvas Chatzivasieliou under the supervision of Thomas Bataillon and Guillaume Ramstein.
 
 ## Features
 
-- Data Preprocessing: Filtering SNPs based on minor allele frequency (MAF) and linkage disequilibrium (LD).
+- Data Preprocessing: Filtering SNPs based on minor allele frequency (MAF) and linkage disequilibrium (LD) thresholds.
 
-- Epistasis Detection: Using the MM4LMM R package to identify interaction effects.
+- Epistasis Detection: Using the MM4LMM R package to fit mixed models.
 
-- Statistical Model Fitting: Mixed models with kinship matrices to account for population structure.
+- Covariate Control: Includes kinship matrix and PCs to account for structure.
 
-- Enrichment Analysis: Identifying relationships between marginal and interaction effects.
+- Model Comparison: Supports both REML and ML-based inference.
 
-- Pipeline Automation: Implemented using the targets package in R for reproducibility.
+- P-Value Analysis: Computes z-score and LRT-based significance tests.
+
+- Pipeline Automation: Structured with {targets} for modularity, reproducibility, and efficient reruns
+
+## How to Run 
+
+
+
 
 ## Scripts Overview
 
