@@ -22,16 +22,10 @@ This project was completed as a semester-long Project in Bioinformatics (5 ECTS)
 
 Each script auto-installs missing packages on first run.
 
-### Phase 1: Data Preprocessing & Model Fitting
-
 ```r
-targets::tar_make(script = "_targets_phase1.R")
+targets::tar_make
 ```
-### Phase 2: Result Extraction & Analysis
 
-```r
-targets::tar_make(script = "_targets_phase2.R")
-```
 
 
 
