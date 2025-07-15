@@ -34,10 +34,6 @@ targets::tar_make
 
 - _targets.R: Main targets pipeline script, integrating all steps for data processing and model fitting.
 
-- _targets_phase1.R: Handles the first phase of the pipeline, including data loading, conversion, and model fitting.
-
-- _targets_phase2.R: Extracts REML model results and computes enrichment analysis statistics.
-
 - load_n_proc.R: Loads and processes genotype and phenotype data.
 
 - mm4lmm_fitting.R: Fits REML models and manages variance structures.
