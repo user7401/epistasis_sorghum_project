@@ -29,6 +29,15 @@ Each script auto-installs missing packages on first run.
 targets::tar_make
 ```
 
+## Repository Structure
+
+├── docs/                # Project report 
+├── scripts/             # R scripts
+│   ├── _targets.R
+│   ├── mm4lmm_fitting.R
+│   ├── plot_qval_distribution.R
+│   └── ...
+└── README.md            # You are here
 
 
 
