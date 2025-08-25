@@ -32,15 +32,12 @@ targets::tar_make
 ## Repository Structure
 
 ├── docs/                # Project report 
-├── scripts/             # R scripts
+├── scripts/             # R scripts 
 │   ├── _targets.R
 │   ├── mm4lmm_fitting.R
 │   ├── plot_qval_distribution.R
 │   └── ...
 └── README.md            # You are here
-
-
-
 
 ## Scripts Overview
 
