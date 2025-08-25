@@ -21,6 +21,18 @@ This project was completed as a semester-long Project in Bioinformatics (5 ECTS)
 
 - Pipeline Automation: Structured with {targets} for modularity, reproducibility, and efficient reruns
 
+## Repository Structure
+
+```text
+├── docs/                # Project report
+├── scripts/             # R scripts 
+│   ├── _targets.R
+│   ├── mm4lmm_fitting.R
+│   ├── plot_qval_distribution.R
+│   └── ...
+└── README.md            # You are here
+```
+
 ## How to Run 
 
 Each script auto-installs missing packages on first run.
@@ -28,16 +40,6 @@ Each script auto-installs missing packages on first run.
 ```r
 targets::tar_make
 ```
-
-## Repository Structure
-
-├── docs/                # Project report 
-├── scripts/             # R scripts 
-│   ├── _targets.R
-│   ├── mm4lmm_fitting.R
-│   ├── plot_qval_distribution.R
-│   └── ...
-└── README.md            # You are here
 
 ## Scripts Overview
 
