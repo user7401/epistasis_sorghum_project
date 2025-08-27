@@ -58,3 +58,5 @@ targets::tar_make
 - adjust_fdr_bh.R: Applies Benjamini–Hochberg FDR correction to interaction p-values and updates result files.
 
 - classify_and_plot_significant_interactions.R: Merges marginal and interaction results, filters significant SNP–SNP effects, classifies significance patterns, and generates comparative plots.
+
+- interaction_strength_boxplot.R: Compares interaction strength between SNPs with and without significant marginal effects using boxplots.
