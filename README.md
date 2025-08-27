@@ -62,3 +62,5 @@ targets::tar_make
 - interaction_strength_boxplot.R: Compares interaction strength between SNPs with and without significant marginal effects using boxplots.
 
 - plot_interaction_pvalues.R: Plots detailed histograms of SNP–SNP interaction p-value distributions.
+
+- plot_qval_distribution.R: Visualizes FDR-adjusted q-value distributions for SNP–SNP interactions.
