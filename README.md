@@ -52,3 +52,5 @@ targets::tar_make
 - extract_reml_info.R: Extracts SNP interaction results from REML models.
 
 - extract_and_plot.R: Computes and visualizes p-value distributions.
+
+- add_interaction_pvalues.R: Calculates z-scores and p-values for SNP–SNP interaction terms and updates .qs result files.
