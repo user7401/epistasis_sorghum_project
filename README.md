@@ -64,3 +64,5 @@ targets::tar_make
 - plot_interaction_pvalues.R: Plots detailed histograms of SNP–SNP interaction p-value distributions.
 
 - plot_qval_distribution.R: Visualizes FDR-adjusted q-value distributions for SNP–SNP interactions.
+
+- summarize_significant_interactions.R: Summarizes SNPs with significant marginal and interaction effects, saves results, and plots the top 20 interaction hotspots.
