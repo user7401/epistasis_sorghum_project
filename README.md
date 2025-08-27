@@ -54,3 +54,5 @@ targets::tar_make
 - extract_and_plot.R: Computes and visualizes p-value distributions.
 
 - add_interaction_pvalues.R: Calculates z-scores and p-values for SNP–SNP interaction terms and updates .qs result files.
+
+- adjust_fdr_bh.R: Applies Benjamini–Hochberg FDR correction to interaction p-values and updates result files.
