@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project was completed as a semester-long Project in Bioinformatics (5 ECTS) during my Master's degree at Aarhus Univeristy. This project explores the role of genetic interactions (epistasis) in shaping the genetic architecture of complex traits in Sorghum bicolor. Using single-nucleotide polymorphism (SNP) data and phenotypic information, we developed a modular and reproducible R pipeline for epistasis analysis to detect significant SNP-SNP interactions. The pipeline automates the entire process from VCF processing to statistical model fitting. The project was done in collaboration with Savvas Chatzivasieliou under the supervision of Thomas Bataillon and Guillaume Ramstein.
+This project was completed as a semester-long Project in Bioinformatics (5 ECTS) during my Master's degree at Aarhus University. This project explores the role of genetic interactions (epistasis) in shaping the genetic architecture of complex traits in Sorghum bicolor. Using single-nucleotide polymorphism (SNP) data and phenotypic information, we developed a modular and reproducible R pipeline for epistasis analysis to detect significant SNP-SNP interactions. The pipeline automates the entire process from VCF processing to statistical model fitting. The project was done in collaboration with Savvas Chatzivasieliou under the supervision of Thomas Bataillon and Guillaume Ramstein.
 
 🚧 *This repository is a work in progress.* 🚧  
 
@@ -71,4 +71,4 @@ targets::tar_make
 
 - build_2x2_tables.R: Generates 2×2 contingency tables of marginal vs. interaction significance across multiple traits, saving each table as a .qs file.
 
-- plot_enrichment_vs_threshold.R: Aggregates enrichment ratios across traits and significance thresholds, plotting enrichment vs. p-value threshold on the log scale.
+- plot_enrichment_vs_threshold.R: Aggregates enrichment ratios across traits and significance thresholds, plotting enrichment vs. p-value threshold on the log-scale.
