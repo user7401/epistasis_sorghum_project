@@ -68,3 +68,5 @@ targets::tar_make
 - summarize_significant_interactions.R: Summarizes SNPs with significant marginal and interaction effects, saves results, and plots the top 20 interaction hotspots.
 
 - chi_sq_test_2x2.R: Performs a Chi-squared test on a 2×2 contingency table of marginal vs. interaction significance, checks test assumptions, reports enrichment ratio, and prints results to the console.
+
+- build_2x2_tables.R: Generates 2×2 contingency tables of marginal vs. interaction significance across multiple traits, saving each table as a .qs file.
