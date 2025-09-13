@@ -70,3 +70,5 @@ targets::tar_make
 - chi_sq_test_2x2.R: Performs a Chi-squared test on a 2×2 contingency table of marginal vs. interaction significance, checks test assumptions, reports enrichment ratio, and prints results to the console.
 
 - build_2x2_tables.R: Generates 2×2 contingency tables of marginal vs. interaction significance across multiple traits, saving each table as a .qs file.
+
+- plot_enrichment_vs_threshold.R: Aggregates enrichment ratios across traits and significance thresholds, plotting enrichment vs. p-value threshold on the log scale.
