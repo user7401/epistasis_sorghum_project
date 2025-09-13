@@ -66,3 +66,5 @@ targets::tar_make
 - plot_qval_distribution.R: Visualizes FDR-adjusted q-value distributions for SNP–SNP interactions.
 
 - summarize_significant_interactions.R: Summarizes SNPs with significant marginal and interaction effects, saves results, and plots the top 20 interaction hotspots.
+
+- chi_sq_test_2x2.R: Performs a Chi-squared test on a 2×2 contingency table of marginal vs. interaction significance, checks test assumptions, reports enrichment ratio, and prints results to the console.
