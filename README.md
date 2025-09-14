@@ -33,6 +33,12 @@ This project was completed as a semester-long Project in Bioinformatics (5 ECTS)
 └── README.md            # You are here
 ```
 
+## Dependencies
+- R version 4.4.1
+
+> Note: Running the pipeline via `{targets}` will auto-install its required packages (see `_targets.R`).  
+> The standalone CLI scripts assume packages are already installed.
+
 ## How to Run 
 
 Each script auto-installs missing packages on first run.
