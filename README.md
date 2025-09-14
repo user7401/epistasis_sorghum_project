@@ -79,3 +79,7 @@ This enrichment plot shows how enrichment ratios vary across traits and signific
 It highlights the type of insights produced by the pipeline.
 
 ![Enrichment vs P-Value Threshold](results/enrichment_vs_threshold.png)
+
+## Documentation
+See the full project report in [`docs/Pairwise_Epistasis_Sorghum_Report.pdf`](docs/Pairwise_Epistasis_Sorghum_Report.pdf).
+
