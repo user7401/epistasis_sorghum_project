@@ -25,6 +25,7 @@ This project was completed as a semester-long Project in Bioinformatics (5 ECTS)
 
 ```text
 ├── docs/                # Project report
+├── results/
 ├── scripts/             # R scripts 
 │   ├── _targets.R
 │   ├── mm4lmm_fitting.R
