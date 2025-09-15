@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+title: Pairwise Epistatic Interactions and Their Functional Consequences in Sorghum
+message: If you use this repository, please cite it as below.
+authors:
+  - family-names: Nikolaidou
+    given-names: Eleni
+    affiliation: Aarhus University
+  - family-names: Chatzivasileiou
+    given-names: Savvas
+    affiliation: Aarhus University
+repository-code: https://github.com/ElNikolaidou/epistasis_sorghum_project
+license: MIT
+version: 0.1.0
+date-released: 2025-09-14
