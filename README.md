@@ -7,17 +7,17 @@ This project was completed as a semester-long Project in Bioinformatics (5 ECTS)
 
 ## Features
 
-- **Data Preprocessing: Filtering SNPs based on minor allele frequency (MAF) and linkage disequilibrium (LD) thresholds.**
+- **Data Preprocessing**: Filtering SNPs based on minor allele frequency (MAF) and linkage disequilibrium (LD) thresholds.
 
-- **Epistasis Detection: Using the MM4LMM R package to fit mixed models.**
+- **Epistasis Detection**: Using the MM4LMM R package to fit mixed models.
 
-- **Covariate Control: Includes kinship matrix and PCs to account for structure.**
+- **Covariate Control**: Includes kinship matrix and PCs to account for structure.
 
-- **Model Comparison: Supports both REML and ML-based inference.**
+- **Model Comparison**: Supports both REML and ML-based inference.
 
-- **P-Value Analysis: Computes z-score and LRT-based significance tests.**
+- **P-Value Analysis**: Computes z-score and LRT-based significance tests.
 
-- **Pipeline Automation: Structured with {targets} for modularity, reproducibility, and efficient reruns**
+- **Pipeline Automation**: Structured with {targets} for modularity, reproducibility, and efficient reruns.
 
 ## Repository Structure
 
