@@ -52,6 +52,8 @@ targets::tar_make
 
 ## Scripts Overview
 
+**Pipeline (core functions used by `_targets.R`):**
+
 - _targets.R: Main targets pipeline script, integrating all steps for data processing and model fitting.
 
 - load_n_proc.R: Loads and processes genotype and phenotype data.
@@ -59,6 +61,8 @@ targets::tar_make
 - mm4lmm_fitting.R: Fits REML models and manages variance structures.
 
 - extract_reml_info.R: Extracts SNP interaction results from REML models.
+
+**Analysis (downstream scripts for post-processing and visualization):**
 
 - extract_and_plot.R: Computes and visualizes p-value distributions.
 
