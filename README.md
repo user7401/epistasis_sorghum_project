@@ -22,14 +22,18 @@ This project was completed as a semester-long Project in Bioinformatics (5 ECTS)
 ## Repository Structure
 
 ```text
-├── docs/                # Project report
-├── results/
-├── scripts/             # R scripts 
-│   ├── _targets.R
-│   ├── mm4lmm_fitting.R
-│   ├── plot_qval_distribution.R
-│   └── ...
-└── README.md            # You are here
+├── docs/ # Project report (PDF)
+├── results/ # Curated output plots
+├── scripts/ # Modular R scripts for pipeline steps
+│ ├── _targets.R
+│ ├── mm4lmm_fitting.R
+│ ├── plot_qval_distribution.R
+│ └── ...
+├── .gitignore
+├── CITATION.cff
+├── LICENSE
+└── README.md
+
 ```
 
 ## Dependencies
