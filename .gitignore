@@ -1,0 +1,22 @@
+# R session files
+.Rhistory
+.RData
+.Ruserdata
+
+# RStudio project files
+.Rproj.user/
+*.Rproj
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Pipeline outputs
+*.qs
+
+# Results (ignore all except curated plots)
+results/*
+!results/enrichment_vs_threshold.png
+!results/cal_g_p_value_distribution.png
+!results/cal_g_q_value_distribution_BH.png
+!results/scatterplot.png
