@@ -7,7 +7,7 @@ This project was completed as a semester-long Project in Bioinformatics (5 ECTS)
 
 ## Features
 
-- Data Preprocessing: Filtering SNPs based on minor allele frequency (MAF) and linkage disequilibrium (LD) thresholds.
+- **Data Preprocessing**: SNP filtering by MAF and LD thresholds. 
 
 - Epistasis Detection: Using the MM4LMM R package to fit mixed models.
 
