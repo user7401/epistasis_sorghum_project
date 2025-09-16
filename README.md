@@ -1,5 +1,4 @@
 # Pairwise Epistatic Interactions and Their Functional Consequences in Sorghum
-
 *A reproducible R pipeline for detecting SNP–SNP interactions using {targets} and MM4LMM*
 
 ## Overview
