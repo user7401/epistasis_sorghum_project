@@ -44,7 +44,7 @@ This project was completed as a semester-long Project in Bioinformatics (5 ECTS)
 
 ## How to Run 
 
-Each script auto-installs missing packages on first run.
+To run the main pipeline: 
 
 ```r
 targets::tar_make
