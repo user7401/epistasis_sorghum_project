@@ -50,7 +50,7 @@ targets::tar_make
 ```
 To run an analysis script (example: applying FDR correction):
 
-```r
+```bash
 Rscript scripts/analysis/adjust_fdr_bh.R results/
 ```
 
