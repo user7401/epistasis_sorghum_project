@@ -48,6 +48,11 @@ To run the main pipeline:
 ```r
 targets::tar_make
 ```
+To run an analysis script (example: applying FDR correction):
+
+```r
+Rscript scripts/analysis/adjust_fdr_bh.R results/
+```
 
 ## Scripts Overview
 
