@@ -7,8 +7,6 @@ This project was completed as a semester-long Project in Bioinformatics (5 ECTS)
 
 ## Features
 
-## Features
-
 - **Preprocessing**: Loads pruned genotype data, phenotypes, kinship matrix, and PCs for analysis.  
 - **Epistasis Modeling**: Fits SNP–SNP interaction models using MM4LMM with covariate control (kinship + PCs).  
 - **Significance Testing**: Provides z-score and LRT-based p-values with Benjamini–Hochberg FDR correction.  
