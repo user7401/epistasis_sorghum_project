@@ -7,28 +7,29 @@ This project was completed as a semester-long Project in Bioinformatics (5 ECTS)
 
 ## Features
 
-- **Data Preprocessing**: Filtering SNPs based on minor allele frequency (MAF) and linkage disequilibrium (LD) thresholds.
+## Features
 
-- **Epistasis Detection**: Using the MM4LMM R package to fit mixed models.
+- **Preprocessing**: Loads pruned genotype data, phenotypes, kinship matrix, and PCs for analysis.  
+- **Epistasis Modeling**: Fits SNP–SNP interaction models using MM4LMM with covariate control (kinship + PCs).  
+- **Significance Testing**: Provides z-score and LRT-based p-values with Benjamini–Hochberg FDR correction.  
+- **Visualization & Summaries**: Creates q-value distributions, enrichment plots, interaction strength comparisons, and SNP-level summaries.  
+- **Reproducible Pipeline**: Automated with {targets} for modularity, caching, and reproducible reruns.  
 
-- **Covariate Control**: Includes kinship matrix and PCs to account for structure.
-
-- **Model Comparison**: Supports both REML and ML-based inference.
-
-- **P-Value Analysis**: Computes z-score and LRT-based significance tests.
-
-- **Pipeline Automation**: Structured with {targets} for modularity, reproducibility, and efficient reruns.
 
 ## Repository Structure
 
 ```text
-├── docs/ # Project report (PDF)
-├── results/ # Curated output plots
-├── scripts/ # Modular R scripts for pipeline steps
-│ ├── _targets.R
-│ ├── mm4lmm_fitting.R
-│ ├── plot_qval_distribution.R
-│ └── ...
+├── docs/                  # Project report (PDF)
+├── results/               # Curated output plots (example results)
+├── scripts/
+│   ├── pipeline/          # Core functions used by the {targets} pipeline
+│   │   ├── load_n_proc.R
+│   │   ├── mm4lmm_fitting.R
+│   │   └── extract_reml_info.R
+│   └── analysis/          # Standalone scripts for downstream analysis & visualization
+│       ├── adjust_fdr_bh.R
+│       ├── plot_qval_distribution.R
+│       └── ...
 ├── .gitignore
 ├── CITATION.cff
 ├── LICENSE
