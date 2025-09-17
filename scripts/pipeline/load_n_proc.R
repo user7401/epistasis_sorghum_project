@@ -1,5 +1,5 @@
 load_vcf_data <- function() {
-  vcf <- read.vcfR("SAP_387_bi_cds_ids_pruned_MAF_0.25_window_100kb_step_50kb_r2_0.2.vcf.gz")
+  vcf <- read.vcfR("data/genotypes_pruned.vcf.gz")
   geno <- extract.gt(vcf)
   return(list(vcf = vcf, geno = geno))
 }
