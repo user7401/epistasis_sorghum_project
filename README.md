@@ -3,7 +3,7 @@
 
 ## Overview
 
-This project was completed as a semester-long Project in Bioinformatics (5 ECTS) during my Master's degree at Aarhus University. This project explores the role of genetic interactions (epistasis) in shaping the genetic architecture of complex traits in Sorghum bicolor. Using single-nucleotide polymorphism (SNP) data and phenotypic information, we developed a modular and reproducible R pipeline for epistasis analysis to detect significant SNP-SNP interactions. The pipeline automates the entire process from VCF processing to statistical model fitting. The project was done in collaboration with Savvas Chatzivasileiou under the supervision of Thomas Bataillon and Guillaume Ramstein.
+This project was completed as a semester-long Project in Bioinformatics (5 ECTS) during my Master's degree at Aarhus University. This project explores the role of genetic interactions (epistasis) in shaping the genetic architecture of complex traits in Sorghum bicolor. Using single-nucleotide polymorphism (SNP) data and phenotypic information, we developed a modular and reproducible R pipeline for epistasis analysis to detect significant SNP-SNP interactions. The pipeline automates the entire process from VCF processing to statistical model fitting. The project was done in collaboration with Eleni Nikolaidou under the supervision of Thomas Bataillon and Guillaume Ramstein.
 
 ## Features
 
