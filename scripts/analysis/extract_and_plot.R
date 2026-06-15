@@ -1,11 +1,22 @@
-# Set the parallel plan once at the beginning
-num_cores <- 15
-plan(multisession, workers = num_cores)
+# Functions to extract interaction p-values from fitted models and plot their
+# distributions. Sourced by the analysis workflow; call the functions directly.
 
-options(future.globals.maxSize = 64 * 1024^3)  # 64 GiB
+suppressPackageStartupMessages({
+  library(qs)
+  library(ggplot2)
+  library(future.apply)
+})
+
+# Configure the parallel backend used by the functions below.
+setup_parallel_plan <- function(num_cores = 15) {
+  plan(multisession, workers = num_cores)
+  options(future.globals.maxSize = 64 * 1024^3)  # 64 GiB
+}
 
 # Function to extract and plot REML p-values
 extract_and_plot_reml_pvalues <- function(reml_full_3pcs, output_pvalue_file, output_plot_file) {
+  setup_parallel_plan()
+
   # Initialize counters
   non_7x7_varbeta_count <- 0
 
@@ -66,6 +77,8 @@ extract_and_plot_reml_pvalues <- function(reml_full_3pcs, output_pvalue_file, ou
 
 # Function to extract and plot LRT p-values
 extract_and_plot_lrt_pvalues <- function(ml_full_3pcs, ml_reduced_no_interaction, output_pvalue_file, output_plot_file) {
+  setup_parallel_plan()
+
   # Function to perform LRT for each SNP pair
   perform_lrt <- function(i) {
     loglik_full <- ml_full_3pcs[[i]]$LogLik

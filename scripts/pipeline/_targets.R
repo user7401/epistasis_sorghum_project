@@ -1,3 +1,11 @@
+# {targets} pipeline for pairwise SNP-SNP epistasis detection in Sorghum.
+#
+# Steps: load & encode genotypes -> load phenotypes, PCs and kinship ->
+# build per-SNP-pair design matrices -> fit the full REML model ->
+# extract effect sizes and standard errors.
+#
+# Run with: targets::tar_make()
+
 # Function to check and install packages if they are not installed
 install_if_missing <- function(package) {
   if (!requireNamespace(package, quietly = TRUE)) {
@@ -65,18 +73,22 @@ list(
     reml_full_3pcs,
     fit_reml_model(phenotype_data$Y, X_triplet_list, pcs_3, VarList)
   ),
-  #tar_target(
-   # ml_full_3pcs,
-    #fit_ml_model(phenotype_data$Y, X_triplet_list, pcs_3, VarList)
-  #),
-  #tar_target(
-   # X_triplet_list_reduced_no_interaction,
-   # create_reduced_triplet_list(X_triplet_list)
-  #),
-  #tar_target(
-   # ml_reduced_no_interaction,
-    #fit_ml_reduced_model(phenotype_data$Y, X_triplet_list_reduced_no_interaction, pcs_3, VarList)
-  #),
+  # --- Optional ML / LRT path (see report) ---------------------------------
+  # Fits a full ML model and a reduced model without the interaction term so
+  # the two can be compared via a likelihood-ratio test. Disabled by default.
+  #
+  # tar_target(
+  #   ml_full_3pcs,
+  #   fit_ml_model(phenotype_data$Y, X_triplet_list, pcs_3, VarList)
+  # ),
+  # tar_target(
+  #   X_triplet_list_reduced_no_interaction,
+  #   create_reduced_triplet_list(X_triplet_list)
+  # ),
+  # tar_target(
+  #   ml_reduced_no_interaction,
+  #   fit_ml_reduced_model(phenotype_data$Y, X_triplet_list_reduced_no_interaction, pcs_3, VarList)
+  # ),
   tar_target(
     result_df,
     extract_reml_info(reml_full_3pcs)

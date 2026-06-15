@@ -1,3 +1,10 @@
+# Data loading and pre-processing helpers for the epistasis pipeline.
+#
+# Functions here read the pruned VCF, phenotypes, PCs and kinship matrix, encode
+# genotypes numerically, and build the per-SNP-pair design matrices ("triplets":
+# SNP1, SNP2, and their interaction) consumed by the model-fitting step.
+
+# Read the pruned VCF and return both the raw vcfR object and the genotype matrix.
 load_vcf_data <- function() {
   vcf <- read.vcfR("data/genotypes_pruned.vcf.gz")
   geno <- extract.gt(vcf)
@@ -90,5 +97,3 @@ create_triplet_list <- function(geno_numeric) {
   X_triplet_list <- unlist(X_triplet_list_parallel, recursive = FALSE)
   return(X_triplet_list)
 }
-
-gc()

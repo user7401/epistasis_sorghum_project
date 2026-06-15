@@ -1,4 +1,7 @@
-# Function to extract information from all entries of reml_full_3pcs
+# Extract per-SNP-pair effect sizes and standard errors from a fitted MM4LMM
+# result. Returns a data frame with SNP IDs, betas and SEs for SNP1, SNP2 and
+# their interaction. Entries with unparseable names or a non-7x7 VarBeta are
+# skipped and counted.
 extract_reml_info <- function(reml_full_3pcs) {
   # Initialize an empty matrix to store results for all entries
   results <- matrix(ncol = 8, nrow = length(reml_full_3pcs))

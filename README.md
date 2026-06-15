@@ -46,7 +46,7 @@ This project was completed as a semester-long Project in Bioinformatics (5 ECTS)
 To run the main pipeline: 
 
 ```r
-targets::tar_make
+targets::tar_make()
 ```
 To run an analysis script (example: applying FDR correction):
 
