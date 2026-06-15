@@ -1,7 +1,11 @@
 #!/usr/bin/env Rscript
 
-library(qs)
-library(ggplot2)
+# Plot a detailed histogram of raw SNP-SNP interaction p-values.
+
+suppressPackageStartupMessages({
+  library(qs)
+  library(ggplot2)
+})
 
 args <- commandArgs(trailingOnly = TRUE)
 file_path <- if (length(args) >= 1) args[1] else "results/example.qs"

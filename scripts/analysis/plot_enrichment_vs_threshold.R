@@ -1,5 +1,8 @@
 #!/usr/bin/env Rscript
 
+# Aggregate enrichment ratios across traits and significance thresholds and
+# plot enrichment vs p-value threshold on a log scale.
+
 suppressPackageStartupMessages({
   library(qs)
   library(ggplot2)

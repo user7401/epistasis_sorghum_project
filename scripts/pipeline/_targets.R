@@ -27,6 +27,8 @@ library(dplyr)
 library(future.apply)
 library(parallel)
 
+# Storage format toggle: TRUE uses the compact {qs} format for target objects,
+# FALSE uses base R {rds}.
 testing_mode <- TRUE
 
 source("load_n_proc.R")

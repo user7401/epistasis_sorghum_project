@@ -1,5 +1,8 @@
 #!/usr/bin/env Rscript
 
+# Run a chi-squared test on a 2x2 table of marginal vs interaction significance,
+# verify the test's assumptions, and report the True-True enrichment ratio.
+
 suppressPackageStartupMessages({
   library(qs)
   library(dplyr)

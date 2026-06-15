@@ -1,6 +1,11 @@
 #!/usr/bin/env Rscript
 
-library(qs)
+# Compute z-scores and two-sided p-values for the SNP-SNP interaction term in
+# each result file and write them back to the .qs file.
+
+suppressPackageStartupMessages({
+  library(qs)
+})
 
 args <- commandArgs(trailingOnly = TRUE)
 qs_dir <- if (length(args) >= 1) args[1] else "results/"

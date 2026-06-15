@@ -52,11 +52,12 @@ load_and_filter_kinship_matrix <- function(geno_numeric) {
   return(filtered_kinship_matrix)
 }
 
-# Function to process SNP pairs and create a triplet list
-create_triplet_list <- function(geno_numeric) {
+# Function to process SNP pairs and create a triplet list.
+# workers defaults to all-but-one available core for portability across machines.
+create_triplet_list <- function(geno_numeric, workers = max(1, parallel::detectCores() - 1)) {
   library(future.apply)
   library(parallel)
-  plan(multisession, workers = 31)  # Use all but one core
+  plan(multisession, workers = workers)
 
   num_snps <- ncol(geno_numeric)
   snp_names <- colnames(geno_numeric)

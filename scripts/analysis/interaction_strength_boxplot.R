@@ -1,6 +1,11 @@
 #!/usr/bin/env Rscript
 
-library(qs)
+# Compare interaction strength (-log10 interaction p-value) between SNP pairs
+# that involve a marginally significant SNP and those that do not.
+
+suppressPackageStartupMessages({
+  library(qs)
+})
 
 args <- commandArgs(trailingOnly = TRUE)
 marginal_file <- if (length(args) >= 1) args[1] else "marginal.qs"

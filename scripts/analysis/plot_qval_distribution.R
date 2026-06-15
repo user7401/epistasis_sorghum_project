@@ -1,7 +1,11 @@
 #!/usr/bin/env Rscript
 
-library(ggplot2)
-library(qs)
+# Plot the distribution of FDR-adjusted q-values for SNP-SNP interactions.
+
+suppressPackageStartupMessages({
+  library(ggplot2)
+  library(qs)
+})
 
 args <- commandArgs(trailingOnly = TRUE)
 file_path <- if (length(args) >= 1) args[1] else "results/result_df_example.qs"

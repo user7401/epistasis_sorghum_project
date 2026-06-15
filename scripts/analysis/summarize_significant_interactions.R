@@ -1,7 +1,12 @@
 #!/usr/bin/env Rscript
 
-library(qs)
-library(ggplot2)
+# Summarize how many significant interactions each marginally significant SNP
+# participates in, save the summary, and plot the top 20 interaction hotspots.
+
+suppressPackageStartupMessages({
+  library(qs)
+  library(ggplot2)
+})
 
 args <- commandArgs(trailingOnly = TRUE)
 marginal_file <- if (length(args) >= 1) args[1] else "results_df_marginal.qs"

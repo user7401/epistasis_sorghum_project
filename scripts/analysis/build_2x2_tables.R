@@ -1,5 +1,8 @@
 #!/usr/bin/env Rscript
 
+# Build 2x2 contingency tables of marginal vs interaction significance for each
+# trait and save one table per trait as a .qs file.
+
 suppressPackageStartupMessages({
   library(dplyr)
   library(qs)

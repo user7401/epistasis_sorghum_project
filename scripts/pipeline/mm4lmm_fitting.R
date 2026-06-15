@@ -10,9 +10,10 @@ create_var_list <- function(filtered_kinship_matrix, Y) {
 }
 
 # Fit the full REML model with the first 3 PCs included as cofactors.
-fit_reml_model <- function(Y, X_triplet_list, pcs_3, VarList) {
+# n_cores controls how many cores MMEst uses (default 12).
+fit_reml_model <- function(Y, X_triplet_list, pcs_3, VarList, n_cores = 12) {
   MMEst(Y = Y, X = X_triplet_list, Cofactor = pcs_3, VarList = VarList,
-        Method = "Reml", NbCores = 12)
+        Method = "Reml", NbCores = n_cores)
 }
 
 # --- Alternative ML-based path (used for the LRT analysis; see report) -------

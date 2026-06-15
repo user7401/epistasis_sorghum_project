@@ -1,6 +1,11 @@
 #!/usr/bin/env Rscript
 
-library(qs)
+# Apply Benjamini-Hochberg FDR correction to the interaction p-values in each
+# result file and write the resulting q-values back to the .qs file.
+
+suppressPackageStartupMessages({
+  library(qs)
+})
 
 args <- commandArgs(trailingOnly = TRUE)
 qs_dir <- if (length(args) >= 1) args[1] else "results/"
