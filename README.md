@@ -1,6 +1,8 @@
 # Pairwise Epistatic Interactions and Their Functional Consequences in Sorghum
 *A reproducible R pipeline for detecting SNP–SNP interactions using {targets} and MM4LMM*
 
+[![CI](https://github.com/user7401/epistasis_sorghum_project/actions/workflows/ci.yml/badge.svg)](https://github.com/user7401/epistasis_sorghum_project/actions/workflows/ci.yml)
+
 > **Note:** This is a polished, refactored version of the original project, which lives at
 > [ElNikolaidou/epistasis_sorghum_project](https://github.com/ElNikolaidou/epistasis_sorghum_project).
 > The analysis, methodology, and results are unchanged — this version focuses on cleaner code,
@@ -101,6 +103,20 @@ This enrichment plot shows how enrichment ratios vary across traits and signific
 It highlights the type of insights produced by the pipeline.
 
 ![Enrichment vs P-Value Threshold](results/enrichment_vs_threshold.png)
+
+## Testing
+
+Unit tests for the core data-processing helpers (genotype encoding, design-matrix
+construction, and REML result extraction) live in `tests/testthat/`. They use small
+synthetic inputs, so they require no genotype data or `MM4LMM`. Run them locally with:
+
+```bash
+Rscript tests/testthat.R
+```
+
+Continuous integration (`.github/workflows/ci.yml`) runs on every push to `main` and on
+pull requests: it syntax-checks all R scripts, runs the unit tests, and reports `lintr`
+style notes.
 
 ## Documentation
 See the full project report in [`docs/Pairwise_Epistasis_Sorghum_Report.pdf`](docs/Pairwise_Epistasis_Sorghum_Report.pdf).
